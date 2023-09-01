@@ -1,0 +1,551 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.woff2) format('woff2');
+  src: url(../fonts/OpenSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Italic.woff2) format('woff2');
+  src: url(../fonts/OpenSans-Italic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/OpenSans-SemiBold.woff2) format('woff2');
+  src: url(../fonts/OpenSans-SemiBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/OpenSans-Bold.woff2) format('woff2');
+  src: url(../fonts/OpenSans-Bold.woff) format('woff');
+}
+
+* {
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+.content-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexbox {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+}
+
+:root {
+  --bcg-color: #000000;
+  --main-text-color: #FFFFFF;
+  --text-color: #333333;
+}
+
+/*header*/
+.header__container-1 {
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  background-color: var(--bcg-color);
+}
+
+.header__logo {
+  margin-right: 20px;
+}
+
+.header__nav {
+  width: 78%;
+}
+
+.header__nav-list {
+  width: 61%;
+}
+
+.header__nav-list-item {
+  position: relative;
+  z-index: 10;
+  margin-right: 10px;
+}
+
+.header__nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-text-color);
+
+  transition: color .3s ease-in-out;
+}
+
+.header__nav-link-name {
+  position: relative;
+  z-index: 5;
+}
+
+.header__nav-link:focus:not(:hover)::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+
+  transition: background-color .3s ease-in-out;
+  background-color: #7943A4;
+}
+
+.header__nav-link:hover {
+  color: #C283F3;
+  outline: unset;
+}
+
+.header__nav-link:active {
+  color: #7943A4;
+}
+
+.header__nav-link-enter {
+  position: relative;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-text-color);
+
+  transition: color .3s ease-in-out;
+}
+
+.header__nav-link-enter::before {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -21px;
+
+  background-image: url(../img/enter.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  transition: background-image .3s ease-in-out;
+}
+
+.header__nav-link-enter-name {
+  position: relative;
+  z-index: 10;
+}
+
+.header__nav-link-enter:focus:not(:hover):not(:active)::after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -30px;
+
+  background-color: #7943A4;
+
+  transition: background-color .3s ease-in-out;
+}
+
+.header__nav-link-enter:hover {
+  color: #C283F3;
+}
+
+.header__nav-link-enter:hover::before {
+  left: -26px;
+
+  background-image: url(../img/enter-hover.svg);
+}
+
+.header__nav-link-enter:active {
+  color: #9D5CD0;
+}
+
+.header__nav-link-enter:active::before {
+  background-image: url(../img/enter-active.svg);
+}
+
+.header__container-2 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header__menu-list {
+  width: 64%;
+}
+
+.header__menu-item {
+  position: relative;
+  z-index: 1;
+  margin-right: 10px;
+}
+
+.header__menu-btn {
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  color: var(--main-text-color);
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition-property: background-color, color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__menu-btn-name {
+  position: relative;
+  z-index: 1;
+}
+
+.header__menu-btn:focus:not(:active):not(:hover)::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: -23px;
+  bottom: -6px;
+  left: -8px;
+
+  background-color: #7943A4;
+}
+
+.header__menu-btn:hover {
+  color: #9D5CD0;
+}
+
+.header__menu-btn:active {
+  color: #7943A4;
+}
+
+.header__menu-btn::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: -15px;
+  width: 5px;
+  height: 5px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent var(--main-text-color) var(--main-text-color) transparent;
+
+  transform: rotate(45deg);
+  transition-property: transform, border-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__menu-btn:hover::after {
+  border-color: transparent #9D5CD0 #9D5CD0 transparent;
+}
+
+.header__menu-btn:active::after {
+  border-color: transparent #7943A4 #7943A4 transparent;
+}
+
+.is-active.header__menu-btn {
+  color: #7943A4;
+
+  transition: color .3s ease-in-out;
+}
+
+.is-active.header__menu-btn:focus {
+  color: var(--main-text-color);
+}
+
+.is-active.header__menu-btn:hover {
+  color: #9D5CD0;
+}
+
+.is-active.header__menu-btn::after {
+  top: 13px;
+
+  border-color: transparent #7943A4 #7943A4 transparent;
+
+  transform: rotate(225deg);
+  transition-property: transform, border-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.is-active.header__menu-btn:focus:not(:hover)::after {
+  border-color: transparent var(--main-text-color) var(--main-text-color) transparent;
+}
+
+.is-active.header__menu-btn:hover::after {
+  border-color: transparent #9D5CD0 #9D5CD0 transparent;
+}
+
+.header__dropdown {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  padding: 40px;
+  padding-right: 20px;
+  position: absolute;
+  top: 193%;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.header__dropdown.header__dropdown-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__dropdown-simplebar {
+  max-height: 220px;
+  padding-right: 20px;
+}
+
+.header__dropdown-simplebar:focus {
+  outline: unset;
+}
+
+.header__dropdown-simplebar .simplebar-track.simplebar-vertical {
+  background-color: var(--bcg-color);
+  width: 2px;
+}
+
+.header__dropdown-simplebar .simplebar-scrollbar {
+  width: 2px;
+  background-color: var(--main-text-color);
+}
+
+.header__dropdown-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.header__dropdown-link {
+  position: relative;
+  min-height: 40px;
+  width: 100%;
+  padding-left: 15px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--main-text-color);
+
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.header__dropdown-link::after,
+.header__dropdown-link::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.header__dropdown-link::after {
+  box-shadow: 0 0 0 2px #9D5CD0 inset;
+}
+
+.header__dropdown-link::before {
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+}
+
+.header__dropdown-link:focus:not(:active)::after,
+.header__dropdown-link:hover:not(:active)::after,
+.header__dropdown-link:active::before {
+  opacity: 1;
+}
+
+.header__dropdown-link-realism-1 {
+  background-image: url(../img/option-tintoretto.png);
+}
+
+.header__dropdown-link-realism-2 {
+  background-image: url(../img/option-friedrich.png);
+}
+
+.header__dropdown-link-realism-3 {
+  background-image: url(../img/option-leonardo.png);
+}
+
+.header__dropdown-link-realism-4 {
+  background-image: url(../img/option-verrocchio.png);
+}
+
+.header__dropdown-link-impressionism-1 {
+  background-image: url(../img/option-mone.png);
+}
+
+.header__dropdown-link-impressionism-2 {
+  background-image: url(../img/option-sisley.png);
+}
+
+.header__dropdown-link-impressionism-3 {
+  background-image: url(../img/option-manet.png);
+}
+
+.header__dropdown-link-impressionism-4 {
+  background-image: url(../img/option-renoir.png);
+}
+
+.header__dropdown-link-postimpressionism-1 {
+  background-image: url(../img/option-van_gogh.png);
+}
+
+.header__dropdown-link-postimpressionism-2 {
+  background-image: url(../img/option-sezanne.png);
+}
+
+.header__dropdown-link-postimpressionism-3 {
+  background-image: url(../img/option-gauguin.png);
+}
+
+.header__dropdown-link-postimpressionism-4 {
+  background-image: url(../img/option-seurat.png);
+}
+
+.header__dropdown-link-avangard-1 {
+  background-image: url(../img/option-kandinsky.png);
+}
+
+.header__dropdown-link-avangard-2 {
+  background-image: url(../img/option-marinetti.png);
+}
+
+.header__dropdown-link-avangard-3 {
+  background-image: url(../img/option-malevich.png);
+}
+
+.header__dropdown-link-avangard-4 {
+  background-image: url(../img/option-picaso.png);
+}
+
+.header__dropdown-link-futurism-1 {
+  background-image: url(../img/option-carra.png);
+}
+
+.header__dropdown-link-futurism-2 {
+  background-image: url(../img/option-pratella.png);
+}
+
+.header__dropdown-link-futurism-3 {
+  background-image: url(../img/option-severinni.png);
+}
+
+.header__dropdown-link-futurism-4 {
+  background-image: url(../img/option-balla.png);
+}
+
+.header__form-search {
+  flex-direction: row-reverse;
+  width: 16%;
+}
+
+.header__form-input {
+  padding: 0;
+  padding-bottom: 2px;
+  width: 86%;
+
+  color: var(--main-text-color);
+
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+
+  transition: border-bottom .3s ease-in-out;
+}
+
+.header__form-input::placeholder {
+  word-spacing: 2px;
+  color: rgba(255, 255, 255, 0.85);
+
+  transition: color .3s ease-in-out;
+}
+
+.header__form-input,
+.header__form-input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.header__form-input:hover {
+  border-bottom: 1px solid #C283F3;
+}
+
+.header__form-input:focus {
+  border-bottom: 1px solid #7943A4;
+  outline: unset;
+}
+
+.header__form-input:focus::placeholder {
+  color: transparent;
+}
+
+.header__form-btn {
+  padding: 0;
+  width: 24px;
+  height: 22px;
+
+  background-color: transparent;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  border: none;
+
+  cursor: pointer;
+}

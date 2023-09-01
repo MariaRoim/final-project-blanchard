@@ -5,11 +5,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
+  integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body>  <header class="header">
+  <div class="header__container-1">
+    <div class="content-container flex flexbox">
+      <picture>
+        <img src="img/logo-desktop.png" alt="Логотип" class="header__logo">
+      </picture>
+      <nav class="header__nav flex flexbox">
+        <ul class="header__nav-list list flex flexbox">
+          <li class="header__nav-list-item"><a href="#about-us" class="header__nav-link link"><span
+                class="header__nav-link-name">О&nbsp;нас</span></a></li>
+          <li class="header__nav-list-item"><a href="#gallery" class="header__nav-link link"><span
+                class="header__nav-link-name">Галерея</span></a></li>
+          <li class="header__nav-list-item"><a href="#catalog" class="header__nav-link link"><span
+                class="header__nav-link-name">Каталог</span></a></li>
+          <li class="header__nav-list-item"><a href="#events" class="header__nav-link link"><span
+                class="header__nav-link-name">События</span></a></li>
+          <li class="header__nav-list-item"><a href="#projects" class="header__nav-link link"><span
+                class="header__nav-link-name">Проекты</span></a></li>
+          <li class="header__nav-list-item"><a href="#contacts" class="header__nav-link link"><span
+                class="header__nav-link-name">Контакты</span></a></li>
+        </ul>
+        <a href="#" class="header__nav-link-enter link"><span class="header__nav-link-enter-name">Войти</span></a>
+      </nav>
+    </div>
+  </div>
+  <div class="header__container-2">
+    <div class="content-container flex flexbox">
+      <ul class="header__menu-list list flex flexbox">
+        <li class="header__menu-item">
+          <button class="header__menu-btn" id="header__menu-btn-1"><span
+              class="header__menu-btn-name">Реализм</span></button>
+          <div class="header__menu-dropdown header__dropdown">
+            <div class="header__dropdown-simplebar">
+              <ul class="header__dropdown-list list">
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-realism-1 link flex flexbox">Тинторетто</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-realism-2 link flex flexbox">Фридрих</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-realism-3 link flex flexbox">Леонардо</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-realism-4 link flex flexbox">Верроккьо</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__menu-item">
+          <button class="header__menu-btn" id="header__menu-btn-2"><span
+              class="header__menu-btn-name">Импрессионизм</span></button>
+          <div class="header__menu-dropdown header__dropdown">
+            <div class="header__dropdown-simplebar">
+              <ul class="header__dropdown-list list">
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-impressionism-1 link flex flexbox">Моне</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-impressionism-2 link flex flexbox">Сислей</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-impressionism-3 link flex flexbox">Мане</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-impressionism-4 link flex flexbox">Ренуар</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__menu-item">
+          <button class="header__menu-btn" id="header__menu-btn-3"><span
+              class="header__menu-btn-name">Постимпрессионизм</span></button>
+          <div class="header__menu-dropdown header__dropdown">
+            <div class="header__dropdown-simplebar">
+              <ul class="header__dropdown-list list">
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-postimpressionism-1 link flex flexbox">Ван Гог</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-postimpressionism-2 link flex flexbox">Сезанн</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-postimpressionism-3 link flex flexbox">Гоген</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-postimpressionism-4 link flex flexbox">Сёра</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__menu-item">
+          <button class="header__menu-btn" id="header__menu-btn-4"><span
+              class="header__menu-btn-name">Авангард</span></button>
+          <div class="header__menu-dropdown header__dropdown">
+            <div class="header__dropdown-simplebar">
+              <ul class="header__dropdown-list list">
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-avangard-1 link flex flexbox">Кандинский</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-avangard-2 link flex flexbox">Маринетти</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-avangard-3 link flex flexbox">Малевич</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-avangard-4 link flex flexbox">Пикассо</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__menu-item">
+          <button class="header__menu-btn" id="header__menu-btn-5"><span
+              class="header__menu-btn-name">Футуризм</span></button>
+          <div class="header__menu-dropdown header__dropdown">
+            <div class="header__dropdown-simplebar">
+              <ul class="header__dropdown-list list">
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-futurism-1 link flex flexbox">Карра</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-futurism-2 link flex flexbox">Прателла</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-futurism-3 link flex flexbox">Северини</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#"
+                    class="header__dropdown-link header__dropdown-link-futurism-4 link flex flexbox">Балла</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <form action="#" class="header__form-search flex flexbox">
+        <input class="header__form-input" aria-label="Поле ввода" type="text" placeholder="Поиск по&nbsp;сайту">
+        <button class="header__form-btn" type="submit"></button>
+      </form>
+    </div>
+  </div>
+</header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"
+integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
 </body>
 
