@@ -650,3 +650,27 @@
 .hero__swiper-link:active {
   background-color: #7943A4;
 }
+
+/*about-us*/
+.about-us {
+  padding-top: 80px;
+  padding-bottom: 71px;
+}
+
+.about-us__title {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--text-color);
+}
+
+.about-us__text {
+  width: 67%;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text-color);
+}
