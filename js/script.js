@@ -62,3 +62,24 @@ const swiper = new Swiper('.hero__swiper-container', {
   effect: "fade",
   allowTouchMove: false,
 });
+
+const selector = document.querySelector('.choices');
+const choices = new Choices(selector, {
+  searchEnabled: false,
+  placeholder: false,
+});
+
+const swiper2 = new Swiper('.gallery__swiper-container', {
+  slidesPerView: 1,
+  loop: false,
+
+  pagination: {
+    el: ".gallery__swiper-pagination",
+    type: "fraction"
+  },
+
+  navigation: {
+    nextEl: '.gallery__swiper-btn-next',
+    prevEl: '.gallery__swiper-btn-prev',
+  },
+});

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
   integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q=="
@@ -214,7 +215,71 @@
     </p>
   </div>
 </section>
+<section class="gallery" id="gallery">
+  <div class="content-container">
+    <div class="gallery__container flex">
+      <div class="gallery__filter-container flex">
+        <h2 class="gallery__title title">Галерея</h2>
+        <div class="gallery__filter">Фильтр:</div>
+        <select name="select" class="choices">
+          <option value="">Живопись</option>
+          <option value="Рисунок">Рисунок</option>
+          <option value="Скульптура">Скульптура</option>
+        </select>
+        <div class="gallery__checkbox-container flex">
+          <label for="19c" class="gallery__checkbox-label">
+            <input type="checkbox" name="check" class="gallery__checkbox" id="19c">
+            <span role="checkbox" aria-checked="true" aria-label="XIX век"></span>
+            <span>XIX век</span>
+          </label>
+          <label for="20c" class="gallery__checkbox-label">
+            <input type="checkbox" name="check" class="gallery__checkbox" id="20c">
+            <span role="checkbox" aria-checked="true" aria-label="XIX век"></span>
+            <span>XX век</span>
+          </label>
+          <label for="contemp" class="gallery__checkbox-label">
+            <input type="checkbox" name="check" class="gallery__checkbox" id="contemp">
+            <span role="checkbox" aria-checked="true" aria-label="XIX век"></span>
+            <span>Современность</span>
+          </label>
+        </div>
+      </div>
+      <div class="gallery__swiper-container">
+        <div class="gallery__swiper-navigation">
+          <button class="gallery__swiper-btn gallery__swiper-btn-prev" aria-label="К предыдущему слайду"></button>
+          <div class="gallery__swiper-pagination"></div>
+          <button class="gallery__swiper-btn gallery__swiper-btn-next" aria-label="К следующему слайду"></button>
+        </div>
+        <div class="gallery__swiper-wrapper swiper-wrapper">
+          <div class="gallery__slide-desktop swiper-slide flex flexbox">
+            <button class="gallery__slide">
+              <img src="img/gallery-slide1.jpg" alt="Картина">
+            </button>
+          <button class="gallery__slide">
+              <img src="img/gallery-slide1.2.jpg" alt="Картина">
+          </button>
+          <button class="gallery__slide">
+              <img src="img/gallery-slide1.3.jpg" alt="Картина">
+          </button>
+          </div>
+       <div class="gallery__slide-desktop swiper-slide flex flexbox">
+          <button class="gallery__slide">
+              <img src="img/gallery-slide2.jpg" alt="Картина">
+          </button>
+          <button class="gallery__slide">
+              <img src="img/gallery-slide2.2.jpg" alt="Картина">
+          </button>
+          <button class="gallery__slide">
+              <img src="img/gallery-slide2.3.jpg" alt="Картина">
+          </button>
+       </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"
 integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg=="
