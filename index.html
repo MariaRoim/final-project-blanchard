@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css"
@@ -14,7 +15,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>  <header class="header">
+<body> 
+   <header class="header">
   <div class="header__container-1">
     <div class="content-container flex flexbox">
       <picture>
@@ -278,7 +280,223 @@
     </div>
   </div>
 </section>
+<section class="catalog" id="catalog">
+  <div class="content-container">
+    <h2 class="catalog__title title">Каталог</h2>
+    <p class="catalog__desc text">
+      Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+      политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
+      лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей
+      день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
+    </p>
+    <div class="catalog__container flex flexbox">
+      <div class="catalog__artist-container catalog__artist-container__active" data-target="one">
+        <picture>
+          <img class="catalog__artist-img" src="img/catalog-artist.jpg" alt="Автопортрет Доменико Гирландайо">
+        </picture>      
+        <h3 class="catalog__title-artist">Доменико Гирландайо</h3>
+        <div class="catalog__artist-bday">2&nbsp;июня 1448&ndash;11 января 1494</div>
+        <p class="catalog__artist-desc text">
+          Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+          продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+          в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло,
+          со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
+          выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+        </p>
+      </div>
+      <div class="catalog__artist-container" data-target="x">
+        <picture>
+          <img class="catalog__artist-img" src="img/catalog-x-artist.png" alt="X-Художник">
+        </picture>  
+        <h3 class="catalog__title-artist catalog__title-artist-x">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+        <p class="catalog__artist-desc catalog__artist-desc-x text">
+          Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+        </p>
+        <a class="link catalog__accordion-content-link" href="#gallery">В&nbsp;галерею</a>
+      </div>
+      <div class="catalog__accordion-container">
+        <ul class="accordion list">
+          <li>
+            <h3 class="ui-accordion-header-1 catalog__tab catalog__tab__active" data-path="one">
+              <span class="catalog__accordion-title">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
+            </h3>
+            <ul class="ui-accordion-content catalog__accordion-list list text">
+              <li class="catalog__accordion-content-item">
+                <button class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Бенедетто
+                  ди&nbsp;Биндо</button>
+              </li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">
+                  Бергоньоне,&nbsp;Амброджо</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Биссоло,
+                  Франческо</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">
+                  Больтраффио,&nbsp;Джованни</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">
+                  Бонсиньори,&nbsp;Франческо</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">
+                  Боттичини, Рафаэлло</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">
+                  Брамантино</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Бреа,
+                  Людовико</button></li>
+              <li class="catalog__accordion-content-item">
+                <button class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Бьяджо&nbsp;д’Антонио&nbsp;Туччи</button>
+              </li>
+              <li class="catalog__accordion-content-item">
+                <button class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Веккьетта
+                </button>
+              </li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Андреа
+                  Верроккьо</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab catalog__tab__active"
+                  data-path="one">Доменико&nbsp;Гирландайо</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Беноццо
+                  Гоццоли</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Граначчи,
+                  Франческо</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Грегорио
+                  ди&nbsp;Чекко</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Джованни
+                  да&nbsp;Удине</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Джованни
+                  ди&nbsp;Паоло</button></li>
+              <li class="catalog__accordion-content-item">
+                <button class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Джорджоне
+                </button>
+              </li>
+              <li class="catalog__accordion-content-item">
+                <button class="catalog__accordion-content-item-name text catalog__tab" data-path="x">
+                  Парентино, Бернардо</button>
+              </li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Пезеллино
+                </button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Пьетро
+                  Перуджино</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Перуцци,&nbsp;Бальдассаре</button></li>
+              <li class="catalog__accordion-content-item"><button
+                  class="catalog__accordion-content-item-name text catalog__tab" data-path="x">Пизанелло
+                </button></li>
+              <li class="catalog__accordion-content-item">
+                <button class="catalog__accordion-content-item-name text catalog__tab" data-path="x">
+                  Пинтуриккьо</button>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="catalog__tab" data-path="x"><span class="catalog__accordion-title">C&nbsp;1500
+                по&nbsp;1599&nbsp;гг</span></h3>
+            <div class="ui-accordion-content catalog__accordion-content flex">
+              <div class="catalog__accordion-content-container-img">
+                <div class="catalog__accordion-content-img"></div>
+              </div>
+              <div class="catalog__accordion-content-desc">
+                <h4 class="catalog__accordion-content-title">Здесь пока пусто</h4>
+                <p class="catalog__accordion-content-text text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
+                  что-то интересное для себя</p>
+                <a href="#gallery" class="catalog__accordion-content-link link">В&nbsp;галерею</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3 class="catalog__tab" data-path="x"><span class="catalog__accordion-title">C&nbsp;1600
+                по&nbsp;1699&nbsp;гг</span></h3>
+            <div class="ui-accordion-content catalog__accordion-content flex ">
+              <div class="catalog__accordion-content-container-img">
+                <div class="catalog__accordion-content-img"></div>
+              </div>
+              <div class="catalog__accordion-content-desc">
+                <h4 class="catalog__accordion-content-title">Здесь пока пусто</h4>
+                <p class="catalog__accordion-content-text text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
+                  что-то интересное для себя</p>
+                <a href="#gallery" class="catalog__accordion-content-link link">В&nbsp;галерею</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3 class="catalog__tab" data-path="x"><span class="catalog__accordion-title">C&nbsp;1700
+                по&nbsp;1799&nbsp;гг</span></h3>
+            <div class="ui-accordion-content catalog__accordion-content flex">
+              <div class="catalog__accordion-content-container-img">
+                <div class="catalog__accordion-content-img"></div>
+              </div>
+              <div class="catalog__accordion-content-desc">
+                <h4 class="catalog__accordion-content-title">Здесь пока пусто</h4>
+                <p class="catalog__accordion-content-text text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
+                  что-то интересное для себя</p>
+                <a href="#gallery" class="catalog__accordion-content-link link">В&nbsp;галерею</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3 class="catalog__tab" data-path="x"><span class="catalog__accordion-title">C&nbsp;1800
+                по&nbsp;1899&nbsp;гг</span></h3>
+            <div class="ui-accordion-content catalog__accordion-content flex">
+              <div class="catalog__accordion-content-container-img">
+                <div class="catalog__accordion-content-img"></div>
+              </div>
+              <div class="catalog__accordion-content-desc">
+                <h4 class="catalog__accordion-content-title">Здесь пока пусто</h4>
+                <p class="catalog__accordion-content-text text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
+                  что-то интересное для себя</p>
+                <a href="#gallery" class="catalog__accordion-content-link link">В&nbsp;галерею</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3 class="catalog__tab" data-path="x"><span class="catalog__accordion-title">C&nbsp;1900
+                по&nbsp;1999&nbsp;гг</span></h3>
+            <div class="ui-accordion-content catalog__accordion-content flex">
+              <div class="catalog__accordion-content-container-img">
+                <div class="catalog__accordion-content-img"></div>
+              </div>
+              <div class="catalog__accordion-content-desc">
+                <h4 class="catalog__accordion-content-title">Здесь пока пусто</h4>
+                <p class="catalog__accordion-content-text text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
+                  что-то интересное для себя</p>
+                <a href="#gallery" class="catalog__accordion-content-link link">В&nbsp;галерею</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3 class="catalog__tab" data-path="x"><span class="catalog__accordion-title">C&nbsp;2000&nbsp;г</span>
+            </h3>
+            <div class="ui-accordion-content catalog__accordion-conten flex ">
+              <div class="catalog__accordion-content-container-img">
+                <div class="catalog__accordion-content-img"></div>
+              </div>
+              <div class="catalog__accordion-content-desc">
+                <h4 class="catalog__accordion-content-title">Здесь пока пусто</h4>
+                <p class="catalog__accordion-content-text text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти
+                  что-то интересное для себя</p>
+                <a href="#gallery" class="catalog__accordion-content-link link">В&nbsp;галерею</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js"

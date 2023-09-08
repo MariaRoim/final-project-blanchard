@@ -83,3 +83,46 @@ const swiper2 = new Swiper('.gallery__swiper-container', {
     prevEl: '.gallery__swiper-btn-prev',
   },
 });
+
+$(".accordion").accordion({
+  heightStyle: "content",
+  collapsible: true,
+  active: false,
+  icons: false,
+});
+
+$(document).ready(function () {
+  //прикрепляем клик по заголовкам acc-head
+  $('#accordeon .ui-accordion-header').on('click', f_acc);
+});
+
+function f_acc() {
+  //скрываем все кроме того, что должны открыть
+  $('#accordeon .ui-accordion-content').not($(this).next()).slideUp(5000);
+  // открываем или скрываем блок под заголовком, по которому кликнули
+  $(this).next().slideToggle(5000);
+}
+
+function f_acc() {
+  //скрываем все кроме того, что должны открыть
+  $('#accordeon .ui-accordion-content').not($(this).next()).slideDown(5000);
+  // открываем или скрываем блок под заголовком, по которому кликнули
+  $(this).next().slideToggle(5000);
+}
+
+document.querySelectorAll('.catalog__tab').forEach(function (tabsBtn) {
+  tabsBtn.addEventListener('click', function (e) {
+    const path = e.currentTarget.dataset.path;
+
+    document.querySelectorAll('.catalog__tab').forEach(function (btn) {
+      btn.classList.remove('.catalog__tab__active')
+    });
+    e.currentTarget.classList.add('catalog__tab__active');
+
+    document.querySelectorAll('.catalog__artist-container').forEach(function (tabsBtn) {
+      tabsBtn.classList.remove('catalog__artist-container__active')
+    });
+
+    document.querySelector(`[data-target="${path}"]`).classList.add('catalog__artist-container__active');
+  })
+});

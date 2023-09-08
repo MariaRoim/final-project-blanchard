@@ -683,7 +683,7 @@
 
 .gallery__container {
   padding-top: 80px;
-  padding-bottom: 79px;
+  padding-bottom: 75px;
 }
 
 .gallery__filter-container {
@@ -836,7 +836,7 @@
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 34px;
   color: var(--main-text-color);
 
   cursor: pointer;
@@ -1058,4 +1058,332 @@
 
 .gallery__slide:hover::before {
   box-shadow: none;
+}
+
+/*catalog*/
+.catalog {
+  padding-top: 81px;
+  padding-bottom: 73px;
+}
+
+.catalog__title {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--text-color);
+}
+
+.catalog__desc {
+  width: 68%;
+  margin-bottom: 38px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+.catalog__container {
+  align-items: flex-start;
+}
+
+.catalog__artist-container {
+  display: none;
+  width: 47%;
+}
+
+.catalog__artist-container__active {
+  display: block;
+}
+
+.catalog__artist-img {
+  margin-bottom: 28px;
+}
+
+.catalog__title-artist {
+  margin-bottom: 8px;
+  margin-top: 0;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-color);
+}
+
+.catalog__artist-bday {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.catalog__artist-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+.catalog__title-artist-x {
+  margin-bottom: 15px;
+}
+
+.catalog__artist-desc-x {
+  margin-bottom: 15px;
+}
+
+.catalog__accordion-container {
+  width: 50%;
+}
+
+.ui-widget {
+  font-family: inherit;
+}
+
+.ui-icon {
+  display: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 116px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  word-spacing: -1px;
+  color: var(--text-color);
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  transition: color .3s ease-in-out;
+}
+
+.catalog__accordion-title {
+  width: fit-content;
+
+  transition-property: color, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.ui-accordion-header.ui-state-hover {
+  color: #9D5CD0;
+}
+
+.ui-accordion-header.ui-state-focus .catalog__accordion-title {
+  color: var(--main-text-color);
+  background-color: #9D5CD0;
+  border: none;
+}
+
+.ui-state-focus {
+  outline: unset;
+}
+
+.ui-accordion-header.ui-state-active {
+  color: #7943A4;
+}
+
+.ui-accordion-header::after {
+  content: '';
+  right: 0;
+
+  width: 48px;
+  height: 48px;
+
+  background-image: url(../img/accordion-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ECECEC;
+  border-radius: 50%;
+  border: 2px solid transparent;
+
+  transition-property: transform, background-color, border-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.ui-accordion-header.ui-state-active::after {
+  background-color: #D1A9F0;
+  border-color: #9D5CD0;
+
+  transform: rotate(180deg);
+}
+
+.ui-accordion-header.ui-state-hover::after,
+.ui-accordion-header.ui-state-focus::after {
+  background-color: #D1A9F0;
+  border-color: transparent;
+}
+
+.ui-accordion-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  border-bottom: 1px solid #CACACA;
+
+  transition: border-bottom .3s ease-in-out;
+}
+
+.ui-accordion-header-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  border-top: 1px solid #CACACA;
+
+  transition: border-top .3s ease-in-out;
+}
+
+.ui-accordion-header.ui-state-hover::before,
+.ui-accordion-header.ui-state-hover .ui-accordion-header-1::before {
+  border-bottom: 1px solid #9D5CD0;
+  border-top: 1px solid #9D5CD0;
+}
+
+.ui-accordion-header.ui-state-focus::before,
+.ui-accordion-header.ui-state-focus .ui-accordion-header-1::before {
+  border-bottom: 1px solid #CACACA;
+  border-top: 1px solid #CACACA;
+  outline: unset;
+}
+
+.ui-accordion-header.ui-state-active::before,
+.ui-accordion-header.ui-state-active .ui-accordion-header-1::before {
+  border-bottom: 1px solid #7943A4;
+  border-top: 1px solid #7943A4;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+  padding-top: 26px;
+  padding-bottom: 55px;
+
+  border: none;
+  border-bottom: 1px solid #CACACA;
+}
+
+.catalog__accordion-list {
+  column-count: 3;
+}
+
+.catalog__accordion-content-item {
+  cursor: pointer;
+
+  transition-property: border-bottom, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.catalog__accordion-content-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.catalog__accordion-content-item {
+  position: relative;
+  width: fit-content;
+}
+
+.ui-widget button {
+  padding: 0;
+
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.catalog__accordion-content-item-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text-color);
+
+  cursor: pointer;
+}
+
+.catalog__accordion-content-item-name:focus:not(:active)::after,
+.catalog__accordion-content-item-name:hover:not(:focus):not(:active)::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.catalog__accordion-content-item-name:focus-visible:not(:hover):not(:active) {
+  background-color: #9D5CD0;
+  outline: unset;
+}
+
+.catalog__accordion-content-item-name:hover::after {
+  border-bottom: 1px solid #9D5CD0;
+}
+
+.ui-accordion .ui-accordion-content.catalog__accordion-content {
+  align-items: center;
+}
+
+.catalog__accordion-content-container-img {
+  width: 275px;
+  height: 189px;
+  margin-right: 24px;
+
+  border: 2px solid #999999;
+}
+
+.catalog__accordion-content-img {
+  width: 251px;
+  height: 165px;
+  margin: 12px;
+
+  background-color: #999999;
+}
+
+.catalog__accordion-content-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+.catalog__accordion-content-text {
+  margin-bottom: 5px;
+  max-width: 55%;
+
+  line-height: 22px;
+}
+
+.ui-widget-content .catalog__accordion-content-link,
+.catalog__accordion-content-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #9D5CD0;
 }
