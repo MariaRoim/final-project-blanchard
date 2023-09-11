@@ -1387,3 +1387,146 @@
   line-height: 22px;
   color: #9D5CD0;
 }
+
+/*events*/
+.events {
+  position: relative;
+  padding-bottom: 85px;
+}
+
+.events__title {
+  margin-bottom: 18px;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--text-color);
+}
+
+.events__content-container {
+  position: relative;
+}
+
+.events__swiper-container {
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+
+  box-sizing: content-box;
+}
+
+.events__swiper-slide {
+  flex-shrink: 0;
+
+  border: 1px solid #CACACA;
+}
+
+.events__swiper-img {
+  margin-bottom: 10px;
+}
+
+.events__swiper-slide-content {
+  max-width: 85%;
+  min-height: 383px;
+
+  padding-bottom: 40px;
+  padding-left: 50px;
+  flex-direction: column;
+}
+
+.events__event,
+.events__event-date {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.events__event-date {
+  margin-bottom: 13px;
+}
+
+.events__heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-color);
+}
+
+.events__swiper-slide-text {
+  margin-bottom: auto;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+.events__swiper-slide-link {
+  width: fit-content;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #9D5CD0;
+
+  border-bottom: 1px solid #9D5CD0;
+}
+
+.events__swiper-btn {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  color: var(--bcg-color);
+
+  background-color: #ECECEC;
+  border: none;
+  border-radius: 100%;
+
+  transition-property: box-shadow, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.events__swiper-btn-next {
+  top: 426px;
+  right: -24px;
+}
+
+.events__swiper-btn-prev {
+  top: 426px;
+  left: -24px;
+}
+
+.events__swiper-btn-next.swiper-button-next:after,
+.events__swiper-btn-prev.swiper-button-prev:after {
+  font-size: 16px;
+}
+
+.events__swiper-btn.swiper-button-disabled {
+  visibility: hidden;
+}
+
+.events__swiper-btn:focus:not(:hover) {
+  box-shadow: 0 0 0 2px #9D5CD0;
+}
+
+.events__swiper-btn:hover {
+  background-color: #D1A9F0;
+}
+
+.events__swiper-btn:active {
+  box-shadow: 0 0 0 2px #9D5CD0;
+  background-color: #D1A9F0;
+}
+

@@ -126,3 +126,14 @@ document.querySelectorAll('.catalog__tab').forEach(function (tabsBtn) {
     document.querySelector(`[data-target="${path}"]`).classList.add('catalog__artist-container__active');
   })
 });
+
+const swiper3 = new Swiper('.events__swiper-container', {
+  slidesPerView: 3,
+  loop: false,
+  spaceBetween: 50,
+  
+  navigation: {
+    nextEl: '.events__swiper-btn-next',
+    prevEl: '.events__swiper-btn-prev',
+  },
+});
