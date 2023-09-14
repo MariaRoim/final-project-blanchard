@@ -148,3 +148,82 @@ const swiper4 = new Swiper('.projects__swiper-container', {
     prevEl: '.projects__swiper-btn-prev',
   },
 });
+
+var element = document.querySelector("input[type='tel']")
+var im = new Inputmask("+7 (999) 999-99-99");
+im.mask(element);
+
+new JustValidate('.contacts__form', {
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      maxLength: 20
+    },
+
+    tel: {
+      required: true,
+      function: (name, value) => {
+        const phone = element.inputmask.unmaskedvalue()
+        return Number(phone) && phone.length === 10
+      }
+    }
+  },
+
+  messages: {
+    name: {
+      required: 'Недопустимый формат',
+    },
+
+    tel: {
+      required: 'Недопустимый формат'
+    }
+  }
+});
+
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ymaps.ready(init);
+function init() {
+  // Создание карты.
+  var myMap = new ymaps.Map("map", {
+    // Координаты центра карты.
+    // Порядок по умолчанию: «широта, долгота».
+    // Чтобы не определять координаты центра карты вручную,
+    // воспользуйтесь инструментом Определение координат.
+    center: [55.75846806898367, 37.60108849999989],
+    // Уровень масштабирования. Допустимые значения:
+    // от 0 (весь мир) до 19.
+    zoom: 14
+  });
+  myMap.behaviors.disable('scrollZoom');
+
+  var myPlacemark = new ymaps.Placemark([55.75846806898367, 37.60108849999989], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/place-mark.svg',
+    iconImageSize: [20, 20],
+  });
+
+  // Размещение геообъекта на карте.
+  myMap.geoObjects.add(myPlacemark);
+}
+
+document.querySelector('#burger').addEventListener('click', function() {
+  document.querySelector('#menu').classList.toggle('is-active')
+})
+
+document.querySelector('#burger').addEventListener('click', function() {
+  document.querySelector('#burger').classList.toggle('open-menu')
+})
+
+document.querySelector('#search-btn').addEventListener('click', function() {
+  document.querySelector('#search-open').classList.toggle('is-active')
+})
+
+document.querySelector('#search-btn').addEventListener('click', function() {
+  document.querySelector('#search-btn').classList.toggle('is-open')
+})
+
+document.querySelector('#search-btn').addEventListener('click', function() {
+  document.querySelector('#search-btn').classList.toggle('header__search-btn-close')
+})

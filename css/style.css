@@ -1743,3 +1743,198 @@
   box-shadow: 0 0 0 2px #9D5CD0;
   background-color: #D1A9F0;
 }
+
+/*contacts*/
+.contacts__contacts {
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+}
+
+.contacts__container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.contacts__place,
+.contacts__adress {
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+.contacts__place {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.contacts__adress {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contacts__form {
+  width: 57%;
+}
+
+.contacts__input {
+  min-height: 50px;
+  min-width: 270px;
+  padding: 0;
+  padding-left: 24px;
+
+  border: 1px solid var(--text-color);
+  border-radius: 100px;
+
+  transition: background-color .3s ease-in-out;
+}
+
+.contacts__input:hover,
+.contacts__input:focus {
+  background-color: #ECECEC;
+  outline: unset;
+}
+
+.contacts__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.contacts__btn {
+  position: relative;
+  padding: 11px 35px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #9D5CD0;
+  background-color: inherit;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+
+  cursor: pointer;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.contacts__btn:focus:not(:active):not(:hover)::after {
+  position: absolute;
+  content: '';
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 100px;
+  border: 2px solid #C283F3;
+  transition: border .3s ease-in-out;
+}
+
+.contacts__btn:hover,
+.contacts__btn:active {
+  background-color: #9D5CD0;
+  color: var(--main-text-color);
+
+}
+
+.contacts__btn:active {
+  box-shadow: 0 0 0 2px #D1A9F0 inset;
+  border: 1px solid #D1A9F0;
+}
+
+.contacts__contacts-name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+.contacts__label {
+  position: relative;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  left: 24px;
+  bottom: 48px;
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #D11616 !important;
+}
+
+.js-validate-error-field {
+  border: 1px solid #D11616 !important;
+  color: #D11616 !important;
+}
+
+.contacts__contacts-name {
+  margin-bottom: 6px;
+}
+
+.contacts__apps-container {
+  justify-content: flex-start;
+}
+
+.contacts__apps {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__apps svg {
+  transition-property: opacity, box-shadow, border-radius;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.conatacts__whatsapp {
+  margin-right: 15px;
+}
+
+.contacts__apps:hover svg,
+.contacts__apps:focus svg {
+  opacity: .5;
+}
+
+.contacts__apps:active svg {
+  box-shadow: 0 0 0 1px #9D5CD0 inset;
+  border-radius: 100px;
+}
+
+.contacts__map {
+  height: 700px;
+  width: 100%;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.ymaps-2-1-79-searchbox,
+.ymaps-2-1-79-zoom__scale,
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}
+
+.ymaps-2-1-79-controls__control {
+  inset: 250px auto auto 98% !important;
+}
+
+.ymaps-2-1-79-zoom {
+  height: auto !important;
+}
+
+.ymaps-2-1-79-controls__toolbar_left {
+  position: absolute;
+  top: 341px;
+  left: 98%;
+
+}
+
+.ymaps-2-1-79-controls__control_toolbar {
+  margin-left: 0 !important;
+}
