@@ -1938,3 +1938,28 @@
 .ymaps-2-1-79-controls__control_toolbar {
   margin-left: 0 !important;
 }
+
+/*footer*/
+.footer {
+  padding-top: 46px;
+  padding-bottom: 46px;
+  background-color: var(--bcg-color);
+}
+
+.fooer__list {
+  width: 7%;
+}
+
+.footer__link path {
+  transition: fill .3s ease-in-out;
+}
+
+.footer__link:focus path,
+.footer__link:hover path {
+  fill: var(--main-text-color);
+  outline: unset;
+}
+
+.footer__link:active path {
+  fill: #9D5CD0;
+}
