@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
-
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
   <link rel="stylesheet" href="css/swiper.css">
@@ -14,16 +13,19 @@
   crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body> 
    <header class="header">
   <div class="header__container-1">
     <div class="content-container flex flexbox">
+      <button class="header__burger" id="burger"><span></span></button>
       <picture>
+        <source srcset="img/logo-tablet.png" media="(max-width: 1024px)">
         <img src="img/logo-desktop.png" alt="Логотип" class="header__logo">
       </picture>
-      <nav class="header__nav flex flexbox">
+      <nav class="header__nav header__menu flex flexbox" id="menu">
         <ul class="header__nav-list list flex flexbox">
           <li class="header__nav-list-item"><a href="#about-us" class="header__nav-link link"><span
                 class="header__nav-link-name">О&nbsp;нас</span></a></li>
@@ -40,6 +42,13 @@
         </ul>
         <a href="#" class="header__nav-link-enter link"><span class="header__nav-link-enter-name">Войти</span></a>
       </nav>
+      <form action="#" class="header__search flex">
+        <button class="header__search-btn flex" id="search-btn" type="submit"></button>
+        <div class="header__search-open flex" id="search-open">
+        <button class="header__search-btn-open" type="submit"></button>
+        <input class="header__search-input" aria-label="Поле ввода" type="text">
+        </div>
+      </form>
     </div>
   </div>
   <div class="header__container-2">
