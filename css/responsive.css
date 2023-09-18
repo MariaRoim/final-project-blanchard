@@ -227,4 +227,13 @@
     .hero-swiper-slide-3 {
       background-image: url(../img/hero-slide3-tablet.jpg);
     }
+
+    /*about-us*/
+    .about-us {
+      padding-bottom: 70px;
+    }
+
+    .about-us__text {
+      width: 100%;
+  }
 }
