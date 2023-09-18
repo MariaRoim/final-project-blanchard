@@ -198,4 +198,33 @@
    .header__search-open.is-active {
     opacity: 1;
    }
+
+    /*hero*/
+    .hero__swiper-content {
+      padding-top: 107px;
+      padding-bottom: 136px;
+      max-width: 661px;
+    }
+    
+    .hero__swiper-title {
+      line-height: 94px;
+    }
+    
+    .hero__swiper-text {
+      margin-bottom: 160px;
+    
+      line-height: 26px;
+    }
+
+    .hero-swiper-slide-1 {
+      background-image: url(../img/hero-slide1-tablet.jpg);
+    }
+    
+    .hero-swiper-slide-2 {
+      background-image: url(../img/hero-slide2-tablet.jpg);
+    }
+    
+    .hero-swiper-slide-3 {
+      background-image: url(../img/hero-slide3-tablet.jpg);
+    }
 }
