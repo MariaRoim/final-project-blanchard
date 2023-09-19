@@ -912,6 +912,10 @@
   transition: color .3s ease-in-out;
 }
 
+.gallery__slide-tablet {
+  display: none;
+}
+
 .gallery__swiper-container {
   position: relative;
   padding-top: 23px;

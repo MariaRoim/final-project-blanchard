@@ -236,4 +236,46 @@
     .about-us__text {
       width: 100%;
   }
+
+    /* gallery */
+    .gallery {
+      background-image: url(../img/gallery-bcg-tablet.jpg);
+    }
+  
+    .gallery__container{
+      padding-bottom: 77px;
+    }
+  
+    .gallery__filter-container {
+      margin-right: 50px;
+    }
+  
+    .choices {
+      width: 280px;
+    }
+  
+    .gallery__checkbox-container {
+      padding-bottom: 34px;
+    }
+
+    .gallery__checkbox-label {
+      padding-left: 22px;
+    }
+
+    .gallery__checkbox + span {
+      top: 11px;
+      left: -2px;
+    }
+  
+    .gallery__swiper-navigation {
+      padding-left: 0;
+    }
+    
+    .gallery__slide-desktop {
+      display: none;
+    }
+  
+    .gallery__slide-tablet {
+      display: inline-flex;
+    }
 }
