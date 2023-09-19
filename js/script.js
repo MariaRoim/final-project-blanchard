@@ -131,6 +131,18 @@ const swiper3 = new Swiper('.events__swiper-container', {
   slidesPerView: 3,
   loop: false,
   spaceBetween: 50,
+
+  breakpoints: {
+    // when window width is >= 1024px
+    1024:{
+      spaceBetween: 27
+    }
+  },
+  
+  pagination: {
+    el: '.events__swiper-pagination',
+    clickable: true
+  },
   
   navigation: {
     nextEl: '.events__swiper-btn-next',
