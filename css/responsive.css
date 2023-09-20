@@ -421,4 +421,32 @@
   .projects__swiper-btn {
     top: 90%;
   }
+
+    /*contacts*/
+    .contacts__container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+  
+    .contacts__place {
+      margin-bottom: 10px;
+    }
+  
+    .contacts__adress {
+      margin-bottom: 30px;
+  
+      font-size: 14px;
+      line-height: 19px;
+    }
+  
+    .contacts__form {
+      margin-bottom: 28px;
+      width: 100%;
+    }
+  
+    .contacts__btn {
+      padding: 11px 42px;
+    }
 }
