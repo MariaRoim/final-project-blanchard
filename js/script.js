@@ -143,7 +143,7 @@ const swiper3 = new Swiper('.events__swiper-container', {
     el: '.events__swiper-pagination',
     clickable: true
   },
-  
+
   navigation: {
     nextEl: '.events__swiper-btn-next',
     prevEl: '.events__swiper-btn-prev',
@@ -154,6 +154,12 @@ const swiper4 = new Swiper('.projects__swiper-container', {
   slidesPerView: 3,
   loop: false,
   spaceBetween: 50,
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+    }
+  },
 
   navigation: {
     nextEl: '.projects__swiper-btn-next',

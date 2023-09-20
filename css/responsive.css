@@ -340,9 +340,9 @@
   }
 
     /*events*/
-    /* .events {
-      padding-bottom: 122px;
-    } */
+    .events {
+      padding-bottom: 120px;
+    }
 
     .events__title {
       margin-bottom: 15px;
@@ -403,4 +403,22 @@
     .swiper-pagination-bullet-active {
       background: #666666;
     }
+
+  /*projects*/
+  .projects__tooltip-area {
+    width: 100%;
+  }
+  
+  .projects__swiper {
+    max-width: 818px;
+  }
+
+  .projects__swiper-link {
+    width: 384px;
+    height: 128px;
+  }
+
+  .projects__swiper-btn {
+    top: 90%;
+  }
 }
