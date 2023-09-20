@@ -449,4 +449,19 @@
     .contacts__btn {
       padding: 11px 42px;
     }
+
+  /*footer*/
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .fooer__list {
+    width: 15%;
+  }
+
+  .footer__svg {
+    width: 60px;
+    height: 60px;
+  }
 }
