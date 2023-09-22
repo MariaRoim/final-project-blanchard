@@ -71,6 +71,10 @@
   margin: 0;
 }
 
+.img {
+  width: 100%;
+}
+
 :root {
   --bcg-color: #000000;
   --main-text-color: #FFFFFF;
@@ -835,7 +839,7 @@
 }
 
 .gallery__checkbox-label {
-  position: relative;  
+  position: relative;
   padding-left: 25px;
   width: fit-content;
 
@@ -853,7 +857,7 @@
   opacity: 0;
 }
 
-.gallery__checkbox + span {
+.gallery__checkbox+span {
   position: absolute;
   top: 10px;
   left: 0;
@@ -866,7 +870,7 @@
   cursor: pointer;
 }
 
-.gallery__checkbox + span::before {
+.gallery__checkbox+span::before {
   content: '';
   position: absolute;
   top: 0;
@@ -883,32 +887,32 @@
   transition: opacity .3s ease-in-out;
 }
 
-.gallery__checkbox:checked + span:before {
+.gallery__checkbox:checked+span:before {
   opacity: 1;
 }
 
-.gallery__checkbox:focus + span,
-.gallery__checkbox:hover + span {
+.gallery__checkbox:focus+span,
+.gallery__checkbox:hover+span {
   border: 1px solid #C283F3;
-  
+
   transition: border .3s ease-in-out;
 }
 
-.gallery__checkbox:focus + span + span {
+.gallery__checkbox:focus+span+span {
   color: #C283F3;
-  
+
   transition: color .3s ease-in-out;
 }
 
-.gallery__checkbox:checked + span {
+.gallery__checkbox:checked+span {
   border: 1px solid #C283F3;
-  
+
   transition: border .3s ease-in-out;
 }
 
-.gallery__checkbox:checked + span + span {
+.gallery__checkbox:checked+span+span {
   color: #C283F3;
-  
+
   transition: color .3s ease-in-out;
 }
 
@@ -1034,7 +1038,7 @@
   outline: unset;
 }
 
-.gallery__slide::before, 
+.gallery__slide::before,
 .gallery__slide::after {
   position: absolute;
   content: '';
@@ -1400,7 +1404,7 @@
 /*events*/
 .events {
   position: relative;
-  padding-bottom: 85px;
+  padding-bottom: 61px;
 }
 
 .events__title {
@@ -1442,9 +1446,9 @@
 
 .events__swiper-slide-content {
   max-width: 85%;
-  min-height: 383px;
+  min-height: 387px;
 
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   padding-left: 50px;
   flex-direction: column;
 }
@@ -1537,6 +1541,10 @@
 .events__swiper-btn:active {
   box-shadow: 0 0 0 2px #9D5CD0;
   background-color: #D1A9F0;
+}
+
+.events__swiper-pagination {
+  visibility: hidden;
 }
 
 /*projects*/
@@ -1760,7 +1768,7 @@
 }
 
 .contacts__container {
-  padding-top: 36px;
+  padding-top: 38px;
   padding-bottom: 36px;
 }
 

@@ -130,15 +130,16 @@ document.querySelectorAll('.catalog__tab').forEach(function (tabsBtn) {
 const swiper3 = new Swiper('.events__swiper-container', {
   slidesPerView: 3,
   loop: false,
-  spaceBetween: 50,
 
   breakpoints: {
-    // when window width is >= 1024px
-    1024:{
+    1024: {
       spaceBetween: 27
+    },
+    1920: {
+      spaceBetween: 50
     }
   },
-  
+
   pagination: {
     el: '.events__swiper-pagination',
     clickable: true
@@ -151,13 +152,16 @@ const swiper3 = new Swiper('.events__swiper-container', {
 });
 
 const swiper4 = new Swiper('.projects__swiper-container', {
-  slidesPerView: 3,
   loop: false,
   spaceBetween: 50,
+  slidesPerView: 3,
 
   breakpoints: {
     1024: {
       slidesPerView: 2,
+    },
+    1920: {
+      slidesPerView: 3,
     }
   },
 
@@ -226,22 +230,22 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 }
 
-document.querySelector('#burger').addEventListener('click', function() {
+document.querySelector('#burger').addEventListener('click', function () {
   document.querySelector('#menu').classList.toggle('is-active')
 })
 
-document.querySelector('#burger').addEventListener('click', function() {
+document.querySelector('#burger').addEventListener('click', function () {
   document.querySelector('#burger').classList.toggle('open-menu')
 })
 
-document.querySelector('#search-btn').addEventListener('click', function() {
+document.querySelector('#search-btn').addEventListener('click', function () {
   document.querySelector('#search-open').classList.toggle('is-active')
 })
 
-document.querySelector('#search-btn').addEventListener('click', function() {
+document.querySelector('#search-btn').addEventListener('click', function () {
   document.querySelector('#search-btn').classList.toggle('is-open')
 })
 
-document.querySelector('#search-btn').addEventListener('click', function() {
+document.querySelector('#search-btn').addEventListener('click', function () {
   document.querySelector('#search-btn').classList.toggle('header__search-btn-close')
 })
