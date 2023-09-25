@@ -621,3 +621,51 @@
     height: 60px;
   }
 }
+
+@media (max-width: 768px) {
+  .content-container {
+    max-width: 668px;
+  }
+
+  /*hero*/
+  .hero-swiper-slide-1 {
+    background-image: url(../img/hero-slide1-tablet-small.jpg);
+  }
+
+  .hero-swiper-slide-2 {
+    background-image: url(../img/hero-slide2-tablet-small.jpg);
+  }
+
+  .hero-swiper-slide-3 {
+    background-image: url(../img/hero-slide3-tablet-small.jpg);
+  }
+
+  /*gallery*/
+  .gallery {
+    background-image: url(../img/gallery-bcg-tablet-small.png);
+  }
+  .gallery__container {
+    flex-direction: column;
+  }
+
+  .choices {
+    margin-bottom: 39px;
+  }
+
+  .gallery__checkbox-container {
+    padding: 0;
+  }
+
+  .gallery__filter-container {
+    margin: 0;
+    margin-bottom: 39px;
+  }
+
+  .gallery__swiper-container {
+    padding: 0;
+  }
+
+  .gallery__swiper-navigation {
+    margin-bottom: 29px;
+  }
+}
