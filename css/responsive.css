@@ -672,7 +672,7 @@
 
   /*catalog*/
   .catalog__desc {
-    margin-bottom: 29px;
+    margin-bottom: 20px;
   }
   .catalog__container {
     flex-direction: column-reverse;
@@ -727,5 +727,14 @@
   .catalog__accordion-content-desc {
     width: 42%;
     padding-top: 40px;
+  }
+
+  /*events*/
+  .events__swiper-slide-link {
+    line-height: 23px;
+  }
+
+  .events__swiper-pagination.swiper-pagination-bullets {
+    left: 294px;
   }
 }
