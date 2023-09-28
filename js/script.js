@@ -140,6 +140,7 @@ const swiper3 = new Swiper('.events__swiper-container', {
       spaceBetween: 27
     },
     1920: {
+      slidesPerView: 3,
       spaceBetween: 50
     }
   },
@@ -161,6 +162,10 @@ const swiper4 = new Swiper('.projects__swiper-container', {
   slidesPerView: 3,
 
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 34
+    },
     1024: {
       slidesPerView: 2,
     },
