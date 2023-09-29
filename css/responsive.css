@@ -627,6 +627,36 @@
     max-width: 668px;
   }
 
+  /*header*/
+  .header__menu {
+    width: 751px;
+  }
+
+  .header__search-open {
+    right: 53px;
+    z-index: 30;
+  }
+
+  .header__search-input {
+    width: 576px;
+  }
+
+  .header__search-btn.is-open {
+    position: relative;
+  }
+
+  .header__search-btn.is-open::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 131px;
+    bottom: -36px;
+    left: -681px;
+    z-index: 20;
+
+    background-color: var(--bcg-color);
+  }
+
   /*hero*/
   .hero-swiper-slide-1 {
     background-image: url(../img/hero-slide1-tablet-small.jpg);
@@ -745,11 +775,13 @@
 
   .projects__tooltip-area {
     width: 98%;
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 
   .projects__heading {
-    margin-bottom: 29px;
+    margin-bottom: 32px;
+
+    line-height: 25px;
   }
 
   .projects__swiper {
@@ -827,6 +859,11 @@
 
   .contacts__btn {
     padding: 11px 27px;
+  }
+
+  /*footer*/
+  .fooer__list {
+    width: 21%;
   }
   
 }
