@@ -744,6 +744,7 @@
   }
 
   .projects__tooltip-area {
+    width: 98%;
     margin-bottom: 28px;
   }
 
@@ -766,7 +767,7 @@
   .projects__swiper-link-img-1 {
     height: 53px;
   }
-  
+
   .projects__swiper-link-img-2 {
     width: 217px;
     height: 38px;
@@ -801,4 +802,31 @@
     width: 182px;
     height: 49px;
   }
+
+  /*contacts*/
+  .contacts__container {
+    padding-top: 43px;
+  }
+
+  .contacts__adress {
+    margin-bottom: 29px;
+  }
+
+  .contacts__form {
+    flex-wrap: wrap;
+  }
+
+  .contacts__label {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .contacts__input {
+    min-width: 324px;
+  }
+
+  .contacts__btn {
+    padding: 11px 27px;
+  }
+  
 }
