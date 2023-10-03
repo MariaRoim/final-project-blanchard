@@ -559,6 +559,10 @@
   cursor: pointer;
 }
 
+.is-unvisible   {
+  opacity: 0;
+}
+
 /*hero*/
 .hero__swiper-container {
   position: relative;

@@ -695,29 +695,8 @@
     width: 751px;
   }
 
-  .header__search-open {
-    right: 53px;
-    z-index: 30;
-  }
-
   .header__search-input {
     width: 576px;
-  }
-
-  .header__search-btn.is-open {
-    position: relative;
-  }
-
-  .header__search-btn.is-open::after {
-    content: "";
-    position: absolute;
-    top: -40px;
-    right: 131px;
-    bottom: -36px;
-    left: -681px;
-    z-index: 20;
-
-    background-color: var(--bcg-color);
   }
 
   /*hero*/
@@ -924,5 +903,113 @@
   .fooer__list {
     width: 21%;
   }
-  
+}
+
+@media (max-width: 320px) {
+  .content-container {
+    max-width: 290px;
+  }
+
+  /*header*/
+  .header__container-1 {
+    padding-top: 7px;
+    padding-bottom: 9px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+    margin-bottom: -7px;
+    padding-left: 4px;
+  }
+
+  .header__burger {
+    width: 24px;
+    height: 18px;
+  }
+
+  .header__burger span, .header__burger::after, .header__burger::before {
+    height: 2px;
+  }
+
+  .header__burger::after {
+    bottom: 16px;
+  }
+
+  .header__burger span {
+    top: 8px;
+    width: 16px;
+  }
+
+  .header__burger::before {
+    top: 16px;
+    width: 10px;
+  }
+
+  .header__search-btn,
+  .header__search-btn-open {
+    width: 18px;
+    height: 18px;
+
+    background: url(../img/search-responsive-mobile.svg) no-repeat;
+
+    background-position: right;
+  }
+
+  .header__search-btn-open {
+    margin-right: 5px;
+  }
+
+  .header__logo.is-unvisible,
+  .header__burger.is-unvisible  {
+    opacity: 0;
+  }
+
+  .header__search-btn.is-open {
+    height: 15px;
+    width: 15px;
+
+    background: url(../img/search-close-mobile.svg) no-repeat;
+    background-position: right;
+  }
+
+  .header__search-open {
+    right: 25px;
+  }
+
+  .header__search-input {
+    width: 243px;
+  }
+
+  .header__burger.open-menu::before {
+    top: 8px;
+  }
+
+  .header__menu {
+    width: 303px;
+    height: 365px;
+    padding-top: 46px;
+    padding-bottom: 26px;
+    padding-left: 9px;
+  }
+
+  .header__nav-list-item {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .header__nav-link-enter {
+    padding: 15px 30px 15px 42px;
+
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .header__nav-link-enter::before {
+    width: 9px;
+    height: 9px;
+    top: 42%;
+    left: 28%;
+
+    background-image: url(../img/enter-mobile.svg);
+  }
 }

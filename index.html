@@ -22,8 +22,9 @@
       <div class="content-container flex flexbox">
         <button class="header__burger" id="burger"><span></span></button>
         <picture>
+          <source srcset="img/logo-mobile.png" media="(max-width: 320px)">
           <source srcset="img/logo-tablet.png" media="(max-width: 1024px)">
-          <img src="img/logo-desktop.png" alt="Логотип" class="header__logo">
+          <img src="img/logo-desktop.png" alt="Логотип" class="header__logo" id="logo">
         </picture>
         <nav class="header__nav header__menu flex flexbox" id="menu">
           <ul class="header__nav-list list flex flexbox">

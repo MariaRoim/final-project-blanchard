@@ -258,3 +258,10 @@ document.querySelector('#search-btn').addEventListener('click', function () {
 document.querySelector('#search-btn').addEventListener('click', function () {
   document.querySelector('#search-btn').classList.toggle('header__search-btn-close')
 })
+
+document.querySelector('#search-btn').addEventListener('click', function () {
+  if ((window.innerWidth >= 320) && (window.innerWidth <= 768))  {
+    document.querySelector('#logo').classList.toggle('is-unvisible');
+    document.querySelector('#burger').classList.toggle('is-unvisible');
+  }
+});
