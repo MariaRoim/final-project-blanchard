@@ -912,8 +912,8 @@
 
   /*header*/
   .header__container-1 {
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   .header__logo {
@@ -981,12 +981,12 @@
   }
 
   .header__burger.open-menu::before {
-    top: 8px;
+    top: 7px;
   }
 
   .header__menu {
     width: 303px;
-    height: 365px;
+    height: 355px;
     padding-top: 46px;
     padding-bottom: 26px;
     padding-left: 9px;
@@ -1011,5 +1011,64 @@
     left: 28%;
 
     background-image: url(../img/enter-mobile.svg);
+  }
+
+  /*hero*/
+  .hero-swiper-slide-1 {
+    background-image: url(../img/hero-slide1-mobile.jpg);
+  }
+
+  .hero-swiper-slide-2 {
+    background-image: url(../img/hero-slide2-mobile.jpg);
+  }
+
+  .hero-swiper-slide-3 {
+    background-image: url(../img/hero-slide3-mobile.jpg);
+  }
+
+  .hero__swiper-content {
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 57px;
+    padding-left: 25px;
+
+    text-align: center;
+  }
+
+  .hero__swiper-title {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  .hero__swiper-text {
+    margin-bottom: 53px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .hero__swiper-link {
+    padding: 12px 19px;
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  /*about-us*/
+  .about-us {
+    padding-top: 49px;
+    padding-bottom: 43px;
+  }
+
+  .about-us__title {
+    margin-bottom: 11px;
+
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .about-us__text {
+    font-size: 14px;
+    line-height: 28px;
   }
 }
