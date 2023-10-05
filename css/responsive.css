@@ -1071,4 +1071,52 @@
     font-size: 14px;
     line-height: 28px;
   }
+
+  /*gallery*/
+  .gallery {
+    background-image: url(../img/gallery-bcg-mobile.jpg);
+  }
+
+  .gallery__container {
+    padding-top: 51px;
+    padding-bottom: 49px;
+  }
+
+  .gallery__title {
+    margin-bottom: 12px;
+
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .gallery__filter-container {
+    margin-bottom: 31px;
+  }
+
+  .gallery__filter {
+    margin-bottom: 5px;
+  }
+  .choices {
+    width: 290px;
+    margin-bottom: 29px;
+  }
+
+  .gallery__swiper-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .gallery__slide-tablet {
+    display: none;
+  }
+
+  .gallery__slide-mobile {
+    display: inline-flex;
+  }
+
+  .gallery__swiper-navigation {
+    margin-bottom: 0;
+    padding-top: 16px;
+  }
 }
