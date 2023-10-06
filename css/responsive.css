@@ -1119,4 +1119,101 @@
     margin-bottom: 0;
     padding-top: 16px;
   }
+  
+  /*catalog*/
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .catalog__title {
+    margin-bottom: 12px;
+
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .catalog__desc {
+    display: none;
+  }
+
+  .ui-accordion .ui-accordion-header {
+    min-height: 74px;
+  }
+
+  .catalog__accordion-title {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .ui-accordion-header::after {
+    width: 28px;
+    height: 28px;
+
+    background-image: url(../img/accordion-arrow-mobile.svg);
+  }
+
+  .catalog__accordion-list {
+    column-count: 1;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    padding-top: 21px;
+    padding-bottom: 17px;
+  }
+
+  .catalog__accordion-container {
+    margin-bottom: 47px;
+  }
+
+  .catalog__artist-bday {
+    margin-bottom: 12px;
+  }
+
+  .catalog__artist-bday {
+    width: 99%;
+  }
+
+  .catalog__accordion-content-container-img {
+    margin-right: 25px;
+    padding: 6px;
+    width: 90px;
+    height: 130px;
+  }
+
+  .catalog__accordion-content-img {
+    width: 74px;
+    height: 115px;
+    margin: 0;
+  }
+
+  .catalog__accordion-content-desc {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .catalog__accordion-content-title {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .catalog__accordion-content-text {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .catalog__artist-img-x {
+    margin-bottom: 20px;
+  }
+
+  .catalog__title-artist-x {
+    line-height: normal;
+  }
+
+  .catalog__artist-desc-x {
+    width: 80%;
+    margin-bottom: 5px;
+
+    line-height: normal;
+  }
 }
