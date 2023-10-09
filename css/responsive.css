@@ -1216,4 +1216,36 @@
 
     line-height: normal;
   }
+
+  /*events*/
+  .events {
+    padding-bottom: 50px;
+  }
+  
+  .events__title {
+    margin-bottom: 12px;
+
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .events__swiper-img {
+    margin-bottom: 15px;
+  }
+
+  .events__swiper-slide-content {
+    padding-left: 23px;
+    max-width: 97%;
+    height: 465px;
+  }
+
+  .events__event-date {
+    margin-bottom: 10px;
+  }
+
+  .events__swiper-pagination.swiper-pagination-bullets {
+    left: 28%;
+    bottom: -33px;
+  }
+
 }

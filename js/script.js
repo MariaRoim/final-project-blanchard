@@ -132,6 +132,9 @@ const swiper3 = new Swiper('.events__swiper-container', {
   loop: false,
 
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 34
