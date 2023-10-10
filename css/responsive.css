@@ -1219,7 +1219,7 @@
 
   /*events*/
   .events {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
   
   .events__title {
@@ -1248,4 +1248,79 @@
     bottom: -33px;
   }
 
+  /*projects*/
+  .projects__title {
+    margin-bottom: 13px;
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .projects__tooltip-area {
+    margin-bottom: 19px;
+    width: 100%;
+  }
+
+  .projects__heading {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .projects__swiper {
+    max-width: 196px;
+  }
+  
+  .projects__swiper-btn {
+    top: 98%;
+  }
+
+  .projects__swiper-link {
+    width: 195px;
+    height: 65px;
+  }
+
+  .projects__swiper-link-img-1 {
+    width: 105px;
+    height: 26px;
+  }
+
+  .projects__swiper-link-img-2 {
+    width: 141px;
+    height: 25px;
+  }
+
+  .projects__swiper-link-img-3 {
+    width: 117px;
+    height: 27px;
+  }
+
+  .projects__swiper-link-img-5 {
+    width: 53px;
+    height: 37px;
+  }
+
+  .projects__swiper-link-img-6 {
+    width: 75px;
+    height: 37px;
+  }
+
+  .projects__swiper-link-img-7 {
+    width: 109px;
+    height: 30px;
+  }
+
+  .projects__swiper-link-img-8 {
+    width: 124px;
+    height: 30px;
+  }
+
+  .projects__swiper-link-img-9 {
+    width: 80px;
+    height: 35px;
+  }
+
+  .projects__swiper-btn::after {
+    font-size: 9px;
+  }
 }
