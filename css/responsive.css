@@ -1249,6 +1249,10 @@
   }
 
   /*projects*/
+  .projects {
+    padding-bottom: 50px;
+  }
+
   .projects__title {
     margin-bottom: 13px;
     font-size: 28px;
@@ -1322,5 +1326,78 @@
 
   .projects__swiper-btn::after {
     font-size: 9px;
+  }
+
+  /*contacts*/
+  .contacts__contacts {
+    border: none;
+  }
+
+  .contacts__container {
+    padding: 0;
+  }
+
+  .contacts__place {
+    margin-bottom: 5px;
+
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .contacts__adress {
+    margin-bottom: 20px;
+  }
+  
+  .contacts__form {
+    margin-bottom: 24px;
+  }
+
+  .contacts__label {
+    margin-bottom: 20px;
+  }
+
+  .contacts__input {
+    min-width: 291px;
+    min-height: 40px;
+  }
+
+  .contacts__btn {
+    display: none;
+  }
+
+  .contacts__btn-mobile {
+    display: inline-block;
+    padding: 10px 34px;
+  
+    font-weight: 700;
+    font-size: 12px;
+    line-height: normal;
+    color: #9D5CD0;
+    background-color: inherit;
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
+  
+    cursor: pointer;
+  }
+
+  .contacts__contacts-name {
+    margin-bottom: 11px;
+
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .contacts__apps {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contacts__apps svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contacts__map {
+    height: 336px;
   }
 }

@@ -1821,6 +1821,10 @@
   color: #999999;
 }
 
+.contacts__btn-mobile {
+  display: none;
+}
+
 .contacts__btn {
   position: relative;
   padding: 11px 35px;
