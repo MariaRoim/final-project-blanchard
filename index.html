@@ -852,13 +852,15 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="content-container flex flexbox">
-      <picture>
-        <source srcset="" media="(max-width: 320px)">
+    <div class="content-container">
+      <div class="footer__container">
+        <picture>
+        <source srcset="img/logo-mobile.png" media="(max-width: 320px)">
         <img src="img/logo-desktop.png" alt="Логотип" class="header__logo">
       </picture>
       <ul class="fooer__list list flex flexbox">
-        <li class="footer__link"><a href="https://vk.com" aria-label="Перейти на сайт Вконтакте">
+        <li class="footer__link-item">
+          <a class="footer__link" href="https://vk.com" aria-label="Перейти на сайт Вконтакте">
             <svg class="footer__svg" width="45" height="45" viewbox="0 0 45 45" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -866,7 +868,8 @@
                 fill="#CACACA" />
             </svg>
           </a></li>
-        <li class="footer__link"><a href="https://ok.ru/" aria-label="Перейти на сайт Одноклассники">
+        <li class="footer__link-item">
+          <a class="footer__link" href="https://ok.ru/" aria-label="Перейти на сайт Одноклассники">
             <svg class="footer__svg" width="45" height="45" viewbox="0 0 45 45" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -878,6 +881,8 @@
             </svg>
           </a></li>
       </ul>
+      </div>
+      
     </div>
   </footer>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>

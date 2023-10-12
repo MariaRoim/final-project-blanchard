@@ -1971,6 +1971,12 @@
   background-color: var(--bcg-color);
 }
 
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .fooer__list {
   width: 7%;
 }
