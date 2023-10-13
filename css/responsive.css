@@ -176,7 +176,7 @@
     z-index: 10;
     top: 0;
     left: 0;
-    width: 1024px;
+    width: 100%;
     height: 768px;
     padding-top: 97px;
     padding-bottom: 50px;
@@ -216,6 +216,10 @@
     top: 40%;
     left: 30%;
     background-position: unset;
+  }
+
+  .header__nav-link-enter:hover::before {
+    left: 30%;
   }
 
   .header__search {
@@ -628,6 +632,10 @@
     padding-right: 15px;
   }
 
+  .header__search-input {
+    width: 180px;
+  }
+
   .gallery__slide-img {
     width: 90%;
   }
@@ -651,6 +659,30 @@
   .projects__swiper-link {
     width: 318px;
     height: 111px;
+  }
+
+  .projects__tooltip-area {
+    width: 97%;
+  }
+
+  .projects__tooltip-message {
+    bottom: auto;
+    /* Изменение bottom на auto для избежания "ухода" за экран */
+    top: calc(100% + 15px);
+    /* Отображение тултипа над элементом */
+    transform: translateX(-50%) translateY(0);
+    /* Смещение по вертикали */
+  }
+
+  .projects__tooltip-message::after {
+    top: auto;
+    /* Изменение top на auto для корректного отображения треугольника */
+    bottom: 98%;
+    /* Отображение треугольника над тултипом на мобильных устройствах */
+    border-top: none;
+    /* Убираем верхнюю границу треугольника */
+    border-bottom: 10px solid #9D5CD0;
+    /* Добавляем нижнюю границу треугольника */
   }
 
   .contacts__container {
@@ -716,6 +748,7 @@
   .gallery {
     background-image: url(../img/gallery-bcg-tablet-small.png);
   }
+
   .gallery__container {
     flex-direction: column;
     padding-bottom: 78px;
@@ -750,6 +783,7 @@
   .catalog__desc {
     margin-bottom: 20px;
   }
+
   .catalog__container {
     flex-direction: column-reverse;
   }
@@ -821,7 +855,7 @@
   }
 
   .projects__tooltip-area {
-    width: 98%;
+    width: 99%;
     margin-bottom: 0;
   }
 
@@ -834,6 +868,7 @@
   .projects__swiper {
     max-width: 562px;
   }
+
   .projects__swiper-btn {
     top: 93%;
   }
@@ -905,8 +940,64 @@
   }
 }
 
+@media (max-width: 700px) {
+  /* html {
+    overflow-x: hidden;
+  } */
+
+  .content-container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .hero__swiper-title {
+    font-size: 2.5em;
+    line-height: normal;
+  }
+
+  .catalog__artist-img {
+    width: 99%;
+  }
+
+  .catalog__accordion-list {
+    column-count: 2;
+  }
+
+  .gallery__slide-img {
+    width: 90%;
+  }
+
+  .catalog__accordion-list {
+    column-gap: normal;
+  }
+
+  .events__swiper-pagination.swiper-pagination-bullets {
+    left: 40%;
+  }
+
+  .projects__swiper-link {
+    width: 100%;
+  }
+
+  .contacts__form {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .fooer__list {
+    width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .catalog__accordion-list {
+    column-count: auto;
+  }
+}
+
 @media (max-width: 320px) {
   .content-container {
+    padding: 0;
     max-width: 290px;
   }
 
@@ -927,7 +1018,9 @@
     height: 18px;
   }
 
-  .header__burger span, .header__burger::after, .header__burger::before {
+  .header__burger span,
+  .header__burger::after,
+  .header__burger::before {
     height: 2px;
   }
 
@@ -960,7 +1053,7 @@
   }
 
   .header__logo.is-unvisible,
-  .header__burger.is-unvisible  {
+  .header__burger.is-unvisible {
     opacity: 0;
   }
 
@@ -1096,6 +1189,7 @@
   .gallery__filter {
     margin-bottom: 5px;
   }
+
   .choices {
     width: 290px;
     margin-bottom: 29px;
@@ -1115,11 +1209,15 @@
     display: inline-flex;
   }
 
+  .gallery__slide-img {
+    width: auto;
+  }
+
   .gallery__swiper-navigation {
     margin-bottom: 0;
     padding-top: 16px;
   }
-  
+
   /*catalog*/
   .catalog {
     padding-top: 50px;
@@ -1131,6 +1229,10 @@
 
     font-size: 28px;
     line-height: normal;
+  }
+
+  .catalog__artist-img {
+    width: auto;
   }
 
   .catalog__desc {
@@ -1221,7 +1323,7 @@
   .events {
     padding-bottom: 80px;
   }
-  
+
   .events__title {
     margin-bottom: 12px;
 
@@ -1264,10 +1366,6 @@
     width: 100%;
   }
 
-  .projects__tooltip-message {
-    display: none;
-  }
-
   .projects__heading {
     margin-bottom: 10px;
 
@@ -1278,7 +1376,7 @@
   .projects__swiper {
     max-width: 196px;
   }
-  
+
   .projects__swiper-btn {
     top: 98%;
   }
@@ -1351,7 +1449,7 @@
   .contacts__adress {
     margin-bottom: 20px;
   }
-  
+
   .contacts__form {
     margin-bottom: 24px;
   }
@@ -1372,7 +1470,7 @@
   .contacts__btn-mobile {
     display: inline-block;
     padding: 10px 34px;
-  
+
     font-weight: 700;
     font-size: 12px;
     line-height: normal;
@@ -1380,7 +1478,7 @@
     background-color: inherit;
     border: 2px solid #9D5CD0;
     border-radius: 100px;
-  
+
     cursor: pointer;
   }
 

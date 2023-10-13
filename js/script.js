@@ -161,12 +161,11 @@ const swiper3 = new Swiper('.events__swiper-container', {
 
 const swiper4 = new Swiper('.projects__swiper-container', {
   loop: false,
-  spaceBetween: 50,
-  slidesPerView: 3,
 
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 2,
@@ -177,6 +176,7 @@ const swiper4 = new Swiper('.projects__swiper-container', {
     },
     1920: {
       slidesPerView: 3,
+      spaceBetween: 50,
     }
   },
 
@@ -266,7 +266,7 @@ document.querySelector('#search-btn').addEventListener('click', function () {
 })
 
 document.querySelector('#search-btn').addEventListener('click', function () {
-  if ((window.innerWidth >= 320) && (window.innerWidth <= 768))  {
+  if ((window.innerWidth >= 320) && (window.innerWidth <= 768)) {
     document.querySelector('#logo').classList.toggle('is-unvisible');
     document.querySelector('#burger').classList.toggle('is-unvisible');
   }

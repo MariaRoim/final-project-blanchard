@@ -191,6 +191,7 @@
   left: -30px;
 
   background-color: #7943A4;
+  border-radius: 100px;
 
   transition: background-color .3s ease-in-out;
 }
@@ -559,7 +560,7 @@
   cursor: pointer;
 }
 
-.is-unvisible   {
+.is-unvisible {
   opacity: 0;
 }
 
@@ -920,7 +921,8 @@
   transition: color .3s ease-in-out;
 }
 
-.gallery__slide-tablet {
+.gallery__slide-tablet,
+.gallery__slide-mobile {
   display: none;
 }
 
