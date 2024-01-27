@@ -4,6 +4,10 @@
     padding-left: 30px;
   }
 
+  .projects__content {
+    width: 100%;
+  }
+
   .contacts__container {
     flex-direction: column;
     align-items: flex-start;
@@ -57,10 +61,6 @@
   .events__swiper-slide-content {
     max-width: 100%;
     padding-left: 20px;
-  }
-
-  .projects__tooltip-area {
-    width: 100%;
   }
 
   .projects__swiper-link {
@@ -507,10 +507,6 @@
   }
 
   /*projects*/
-  .projects__tooltip-area {
-    width: 100%;
-  }
-
   .projects__swiper {
     max-width: 818px;
   }
@@ -659,30 +655,6 @@
   .projects__swiper-link {
     width: 318px;
     height: 111px;
-  }
-
-  .projects__tooltip-area {
-    width: 97%;
-  }
-
-  .projects__tooltip-message {
-    bottom: auto;
-    /* Изменение bottom на auto для избежания "ухода" за экран */
-    top: calc(100% + 15px);
-    /* Отображение тултипа над элементом */
-    transform: translateX(-50%) translateY(0);
-    /* Смещение по вертикали */
-  }
-
-  .projects__tooltip-message::after {
-    top: auto;
-    /* Изменение top на auto для корректного отображения треугольника */
-    bottom: 98%;
-    /* Отображение треугольника над тултипом на мобильных устройствах */
-    border-top: none;
-    /* Убираем верхнюю границу треугольника */
-    border-bottom: 10px solid #9D5CD0;
-    /* Добавляем нижнюю границу треугольника */
   }
 
   .contacts__container {
@@ -852,11 +824,6 @@
   /*projects*/
   .projects {
     padding-bottom: 80px;
-  }
-
-  .projects__tooltip-area {
-    width: 99%;
-    margin-bottom: 0;
   }
 
   .projects__heading {
@@ -1359,11 +1326,6 @@
     margin-bottom: 13px;
     font-size: 28px;
     line-height: normal;
-  }
-
-  .projects__tooltip-area {
-    margin-bottom: 19px;
-    width: 100%;
   }
 
   .projects__heading {

@@ -1571,7 +1571,8 @@
   color: var(--text-color);
 }
 
-.projects__tooltip-area {
+.projects__content {
+  margin-top: 0;
   margin-bottom: 21px;
   width: 67%;
 
@@ -1579,11 +1580,6 @@
   font-size: 16px;
   line-height: 32px;
   color: var(--text-color);
-}
-
-.projects__tooltip {
-  position: relative;
-  display: inline;
 }
 
 .projects__tooltip-icon {
@@ -1594,79 +1590,51 @@
   cursor: pointer;
 }
 
-.projects__tooltip-icon svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-.projects__tooltip-icon svg,
-.projects__tooltip-icon svg path {
-  transition-property: fill, stroke;
-  transition-duration: .2s;
-  transition-timing-function: ease-in-out;
-}
-
-.projects__tooltip-message {
-  position: absolute;
-  left: 50%;
-  bottom: calc(100% + 15px);
-  padding: 7px 11px;
-  max-width: 264px;
-
+.tippy-box {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  word-wrap: break-word;
   color: #FFFFFF;
-  width: max-content;
+
   background-color: #9D5CD0;
-
-  transform: translateX(-50%);
-
-  opacity: 0;
-
-  transition: opacity .3s;
+  border-radius: 0;
 }
 
-.projects__tooltip-message::after {
-  content: '';
-  position: absolute;
-  top: 98%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top: 10px solid #9D5CD0;
-
+.tippy-box[data-placement^='top']>.tippy-arrow::before {
+  border-top-color: #9D5CD0;
 }
 
-.projects__tooltip-icon:hover+.projects__tooltip-message,
-.projects__tooltip-icon:focus+.projects__tooltip-message {
-  opacity: 1;
+.tippy-content {
+  max-width: 242px; 
+}
+
+.projects__tooltip-icon,
+.projects__tooltip-icon path {
+  transition-property: fill, stroke;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .projects__tooltip-icon:focus {
   outline: unset;
 }
 
-.projects__tooltip-icon svg:hover,
-.projects__tooltip-icon svg:focus {
+.projects__tooltip-icon:hover,
+.projects__tooltip-icon:focus {
   fill: #D1A9F0;
 }
 
-.projects__tooltip-icon:active svg {
+.projects__tooltip-icon:active {
   fill: #9D5CD0;
 }
 
-.projects__tooltip-icon:active svg path {
+.projects__tooltip-icon:active path {
   stroke: none;
 }
 
-.projects__tooltip-icon:active svg path:nth-child(2) {
-  fill: var(--main-text-color);
+.projects__tooltip-icon:active path:nth-child(2) {
+  fill: var(--main-text-color); 
 }
 
 .projects__heading {

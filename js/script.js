@@ -1,3 +1,23 @@
+tippy('.projects__tooltip-icon', {
+    placement: 'top', 
+    arrow: false, 
+    animation: 'fade',
+    duration: 200,
+    maxWidth: '264px',
+  });
+
+  tippy('.projects__tooltip-icon-1', {
+    content: 'Пример современных тенденций—современная методология разработки', 
+  });
+
+  tippy('.projects__tooltip-icon-2', {
+    content: 'Приятно, граждане, наблюдать,как сделанные на базе аналитики выводы вызывают у вас эмоции', 
+  });
+  
+  tippy('.projects__tooltip-icon-3', {
+    content: 'В стремлении повысить качество', 
+  });
+
 document.querySelector('#header__menu-btn-1').addEventListener('click', function () {
   document.querySelector('#header__menu-btn-1').classList.toggle('is-active');
 });
